@@ -1,0 +1,11 @@
+.filter > form > div {
+    display: inline-block;
+    padding: 0 2rem;
+    width: calc(100% - 4rem);
+}
+
+@media only screen and (min-width: 768px) {
+    .filter > form > div {
+        width: calc(50% - 4rem);
+    }
+}

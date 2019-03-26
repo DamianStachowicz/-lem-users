@@ -1,0 +1,9 @@
+{
+    "name": "@lem/users",
+    "version": "0.0.1",
+    "peerDependencies": {
+        "@angular/common": "^7.2.0",
+        "@angular/core": "^7.2.0",
+        "@lem/forms": ">=0.0.1"
+    }
+}

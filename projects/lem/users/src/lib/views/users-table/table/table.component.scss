@@ -1,0 +1,29 @@
+$primary-color: #0f4e89;
+$secondary-color: #e0e0e0;
+$highlight: #d3f2f9;
+$white: #fafafa;
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.table .header {
+    background-color: $primary-color;
+    color: $white;
+    display: table-header-group;
+}
+
+.table .row {
+    display: table-row;
+}
+
+.table .row--dark {
+    background-color: $highlight;
+}
+
+.table .cell {
+    display: table-cell;
+    padding: .75rem;
+    text-align: center;
+}

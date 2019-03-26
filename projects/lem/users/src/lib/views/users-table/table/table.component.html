@@ -1,0 +1,22 @@
+<div class="table">
+    <div class="header">
+        <div class="cell"></div>
+        <div class="cell" i18n>id</div>
+        <div class="cell" i18n>username</div>
+        <div class="cell" i18n>permissions</div>
+    </div>
+    <div class="row" *ngFor="let user of users; index as i" [ngClass]="{'row--dark': i % 2}">
+        <div class="cell">
+            <button i18n>View</button>
+            <button i18n>Edit</button>
+        </div>
+        <div class="cell">{{user.id}}</div>
+        <div class="cell">{{user.username}}</div>
+        <div class="cell">
+            <ng-container *ngFor="let perm of user.permissions; index as idx">
+                <ng-container *ngIf="idx < user.permissions.length - 1">{{perm}}, </ng-container>
+                <ng-container *ngIf="idx === user.permissions.length - 1">{{perm}}</ng-container>
+            </ng-container>
+        </div>
+    </div>
+</div>
